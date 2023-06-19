@@ -1,0 +1,24 @@
+:root {
+  --dark-purple: #24053e;
+  --neon-green: #44ffa1;
+  --dark-gray: #584d62;
+  --dark-white: #fcf8ff;
+  --white: #ffffff;
+
+  --heading-s: 32px/40px "Fraunces", sans-serif;
+  /* 32px font size, 40px line height, Fraunces font family, with a fallback to sans-serif */
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+h1 {
+  font: 600 var(--my-font); /* Semi-bold font weight (600) and the font variable */
+}
