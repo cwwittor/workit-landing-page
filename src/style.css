@@ -16,13 +16,18 @@
   --white: #ffffff;
 
   --bold: 600;
+  --medium: 500;
   --semi-bold: 400;
 
   --text-small: 16px;
   --heading-medium: 56px;
+  --number-small: 20px;
+  --item-title: 1.8rem;
 
   --line-height-text: 32px;
   --line-height-heading-medium: 64px;
+  --line-height-item-title: 36px;
+  --line-height-item-paragraph: 28px;
 
   --manrope: "Manrope", sans-serif;
   --fraunces: "Fraunces", sans-serif;
@@ -88,4 +93,52 @@ h1 {
   font-family: var(--manrope);
   font-size: var(--text-small);
   line-height: var(--line-height-text);
+}
+
+.number {
+  color: var(--dark-purple);
+  font-weight: var(--medium);
+  font-family: var(--fraunces);
+  font-size: var(--number-small);
+  /* line-height: var(--line-height-text); */
+  border: 0.11rem solid var(--dark-gray);
+  border-radius: 50%;
+  width: 48px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+}
+
+.item-title {
+  color: var(--dark-purple);
+  font-family: var(--fraunces);
+  font-weight: var(--bold);
+  font-size: var(--item-title);
+  line-height: var(--line-height-item-title);
+  margin: 0;
+}
+
+.item-paragraph {
+  color: var(--dark-gray);
+  font-weight: var(--semi-bold);
+  font-family: var(--manrope);
+  font-size: var(--text-small);
+  line-height: var(--line-height-item-paragraph);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.item-container {
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.item {
+  /* margin: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
