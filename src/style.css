@@ -23,11 +23,13 @@
   --heading-medium: 56px;
   --number-small: 20px;
   --item-title: 1.8rem;
+  --headshot-title: 32px;
 
   --line-height-text: 32px;
   --line-height-heading-medium: 64px;
   --line-height-item-title: 36px;
   --line-height-item-paragraph: 28px;
+  --line-height-headshot-text: 48px;
 
   --manrope: "Manrope", sans-serif;
   --fraunces: "Fraunces", sans-serif;
@@ -36,7 +38,7 @@
 }
 
 body {
-  margin: 5 auto;
+  margin: 0 auto;
 }
 
 h1 {
@@ -126,6 +128,7 @@ h1 {
   line-height: var(--line-height-item-paragraph);
   text-align: center;
   margin-bottom: 2rem;
+  vertical-align: text-top;
 }
 
 .item-container {
@@ -141,6 +144,57 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.phone-img {
+  width: 85%;
+  height: auto;
+  margin-top: 8rem;
+  margin-left: 1.5rem;
+}
+
+.founder {
+  width: 80%;
+  height: auto;
+}
+
+.curved-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-purple);
+  border-radius: 0 0 70% 70% / 0 0 20% 20%;
+  height: 120px;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.headshot-info-box {
+  background-color: var(--dark-purple);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshot-title {
+  color: var(--white);
+  text-align: center;
+  vertical-align: text-top;
+  font-family: var(--fraunces);
+  font-weight: var(--semi-bold);
+  font-size: var(--headshot-title);
+  line-height: var(--line-height-headshot-text);
+}
+
+.headshot-paragraph {
+  color: var(--white);
+  font-weight: var(--semi-bold);
+  font-family: var(--manrope);
+  font-size: var(--text-small);
+  line-height: var(--line-height-item-paragraph);
+  text-align: center;
+  vertical-align: text-top;
+  margin-bottom: 2rem;
 }
 
 .footer-container {
