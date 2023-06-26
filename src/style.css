@@ -23,7 +23,7 @@
   --heading-medium: 56px;
   --number-small: 20px;
   --item-title: 1.8rem;
-  --headshot-title: 32px;
+  --headshot-title: 30px;
 
   --line-height-text: 32px;
   --line-height-heading-medium: 64px;
@@ -38,7 +38,13 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 1rem;
+  overflow-x: hidden;
+  /* max-width: 600px; */
+}
+
+.container-header {
+  overflow-x: hidden;
 }
 
 h1 {
@@ -80,10 +86,49 @@ h1 {
   flex: 1;
   background-color: var(--dark-purple);
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* padding: 1 rem; */
+}
+
+header > div {
+  position: relative;
+}
+
+header::before {
+  content: "";
+  background: var(--dark-purple);
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  bottom: 44%;
+  border-radius: 0 0 100% 100%;
+  transform: scale(4);
+  transform-origin: bottom;
+  overflow-x: hidden;
+}
+
+/* header {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+} */
+
+.curved-background {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+.phone-img {
+  padding-top: 4rem;
+  width: 80%;
+  height: auto;
+  display: block;
 }
 
 .full-button {
@@ -146,34 +191,45 @@ h1 {
   align-items: center;
 }
 
-.phone-img {
-  width: 85%;
-  height: auto;
-  margin-top: 8rem;
-  margin-left: 1.5rem;
-}
-
-.founder {
+/* .phone-img {
+  padding-top: 4rem;
   width: 80%;
   height: auto;
+  display: block;
+} */
+
+.founder {
+  display: block;
+  position: relative;
+  justify-content: center;
+  width: 80%;
+  z-index: 0;
+
+  height: auto;
 }
 
-.curved-background {
+.founder-box {
   display: flex;
+  position: relative;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-purple);
-  border-radius: 0 0 70% 70% / 0 0 20% 20%;
-  height: 120px;
-  width: 100%;
-  margin-bottom: 8rem;
+
+  bottom: -50px;
+}
+
+.headshot-box {
+  /* padding: 1rem; */
 }
 
 .headshot-info-box {
+  padding: 2.3rem;
   background-color: var(--dark-purple);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .headshot-title {
@@ -184,6 +240,7 @@ h1 {
   font-weight: var(--semi-bold);
   font-size: var(--headshot-title);
   line-height: var(--line-height-headshot-text);
+  margin: 0;
 }
 
 .headshot-paragraph {
@@ -198,11 +255,10 @@ h1 {
 }
 
 .footer-container {
-  /* max-width: 7rem; */
+  margin: 4rem 0rem 4rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  /* justify-content: center; */
   align-items: center;
 }
 
