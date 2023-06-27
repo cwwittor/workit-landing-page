@@ -38,13 +38,16 @@
 }
 
 body {
-  margin: 1rem;
+  margin: 0;
   overflow-x: hidden;
   /* max-width: 600px; */
 }
 
 .container-header {
-  overflow-x: hidden;
+  background: var(--dark-white);
+
+  /* background-color: var(--dark-purple); */
+  /* padding: 0 1rem 0 1rem; */
 }
 
 h1 {
@@ -103,18 +106,17 @@ header::before {
   position: absolute;
   width: 100vw;
   height: 100vw;
-  bottom: 44%;
+  bottom: 15%;
   border-radius: 0 0 100% 100%;
   transform: scale(4);
   transform-origin: bottom;
   overflow-x: hidden;
 }
 
-/* header {
-  width: 100%;
-  box-sizing: border-box;
+header {
+  position: relative;
   overflow: hidden;
-} */
+}
 
 .curved-background {
   display: flex;
@@ -140,6 +142,13 @@ header::before {
   font-family: var(--manrope);
   font-size: var(--text-small);
   line-height: var(--line-height-text);
+}
+
+.full-button:hover {
+  /* align-items: flex-start; */
+  background-color: var(--dark-purple);
+  color: var(--neon-green);
+  border: 1px solid var(--neon-green);
 }
 
 .number {
@@ -177,6 +186,8 @@ header::before {
 }
 
 .item-container {
+  padding: 0 1rem 0 1rem;
+  background: var(--dark-white);
   /* display: flex;
   flex-direction: column; */
   /* justify-content: center;
@@ -270,4 +281,8 @@ header::before {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.icon:hover path {
+  fill: var(--dark-purple);
 }
