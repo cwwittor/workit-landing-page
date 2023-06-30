@@ -318,6 +318,18 @@ header {
   fill: var(--dark-purple);
 }
 
+.background-img1 {
+  display: none;
+}
+
+.background-img2 {
+  display: none;
+}
+
+.background-img3 {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .phone-img {
     width: 60%;
@@ -371,14 +383,33 @@ header {
   }
   .headshot-box {
     align-items: end;
-    width: 60%;
+    width: 66%;
   }
   .founder {
     width: 50%;
+    bottom: -50px;
   }
-  /* .flex-headshot-info-box {
+  .flex-headshot-info-box {
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  } */
+    /* position: absolute; */
+    /* right: 5%; */
+  }
+  .background-img1 {
+    display: block;
+    position: absolute;
+    left: -13rem;
+    top: 6rem;
+  }
+  .background-img2 {
+    display: block;
+    position: absolute;
+    left: 43rem;
+    top: 16rem;
+  }
+  .background-img3 {
+    display: block;
+    position: absolute;
+    right: 5rem;
+    bottom: 5rem;
+  }
 }
