@@ -72,6 +72,7 @@ Things I want to improve upon:
 - I need to use more semantic html
 - I still got a little lazy with variables towards the end for cms
 - Can improve upon thinking about grid solutions to problems
+- I still need to get better about using Margins and Padding. Think there were probably places where I couldve used different implementation.
 - I am unsure if we are supposed to be just creating these viewports, but if we are supposed to have perfect responsiveness in between the specified viewports I need to work around getting absolute images to be more responsive
 
 ## Author
