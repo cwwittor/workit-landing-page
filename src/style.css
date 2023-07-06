@@ -25,6 +25,7 @@
   --item-title: 1.8rem;
   --headshot-title: 1.875rem;
   --tablet-item-title: 3rem;
+  --big-header: 5rem;
 
   --line-height-text: 2rem;
   --line-height-heading-medium: 4rem;
@@ -34,25 +35,19 @@
 
   --manrope: "Manrope", sans-serif;
   --fraunces: "Fraunces", sans-serif;
-
-  /* 32px font size, 40px line height, Fraunces font family, with a fallback to sans-serif */
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
-  /* max-width: 600px; */
 }
 
 .container-header {
   background: var(--dark-white);
-
-  /* background-color: var(--dark-purple); */
-  /* padding: 0 1rem 0 1rem; */
 }
 
 h1 {
-  font: 600 var(--my-font); /* Semi-bold font weight (600) and the font variable */
+  font: 600 var(--my-font);
 }
 
 .nav-bar {
@@ -94,7 +89,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 1 rem; */
 }
 
 header > div {
@@ -143,7 +137,6 @@ header {
   justify-content: center;
   align-items: end;
   max-width: 100%;
-  /* overflow: hidden; */
 }
 
 .phone-img {
@@ -161,7 +154,6 @@ header {
 }
 
 .full-button {
-  /* align-items: flex-start; */
   background-color: var(--neon-green);
   color: var(--dark-purple);
   padding: 1rem 2rem 1rem 2rem;
@@ -172,7 +164,6 @@ header {
 }
 
 .full-button:hover {
-  /* align-items: flex-start; */
   background-color: var(--dark-purple);
   color: var(--neon-green);
   border: 1px solid var(--neon-green);
@@ -183,7 +174,6 @@ header {
   font-weight: var(--medium);
   font-family: var(--fraunces);
   font-size: var(--number-small);
-  /* line-height: var(--line-height-text); */
   border: 0.11rem solid var(--dark-gray);
   border-radius: 50%;
   width: 3rem;
@@ -240,7 +230,6 @@ header {
   width: 100%;
   justify-content: center;
   align-items: center;
-
   bottom: -3.125rem;
 }
 
@@ -400,7 +389,7 @@ header {
     padding: 2.5rem 9.5rem 1rem 9.5rem;
   }
   #heading-text {
-    font-size: 5rem;
+    font-size: var(--big-header);
     max-width: 29rem;
     line-height: 5.2rem;
     font-weight: 400;
@@ -439,14 +428,14 @@ header {
   }
 
   .headshot-title {
-    font-size: 3.5rem;
+    font-size: var(--heading-medium);
     line-height: 4rem;
     font-weight: 300;
   }
   .headshot-paragraph {
     margin: 1rem 0 2.5rem 0;
     text-align: start;
-    font-weight: 400;
+    font-weight: var(--semi-bold);
   }
   .headshot-info-box {
     margin-left: 24rem;
@@ -467,13 +456,10 @@ header {
     left: 82rem;
   }
   .background-img3 {
-    display: block;
-    position: absolute;
     right: 4rem;
     bottom: -4rem;
   }
   .founder-box {
-    justify-content: start;
     left: 6.625rem;
     bottom: -4.125rem;
   }
